@@ -35,9 +35,9 @@ jobs:
         with:
           python-version: '3.12.0'
           cache: pip
-    #   - name: Copy Settings
-    #     run: |
-    #       cp contrib/env-sample .env
+      - name: Copy Settings
+        run: |
+          cp contrib/env-sample .env
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
